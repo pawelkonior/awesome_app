@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>{{ message }}</h3>
+
+<form action="" method="post">
+    <div>
+        <label for="digit1">Liczba 1</label>
+        <input type="text" name="digit1" id="digit1">
+    </div>
+    <div>
+        <label for="operation"></label>
+        <select name="operation" id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+    </div>
+    <div>
+        <label for="digit2">Liczba 2</label>
+        <input type="text" name="digit2" id="digit2">
+    </div>
+    <button type="submit">Oblicz</button>
+</form>
+
+<h2>Wynik:</h2>
+<h3>{{ result }}</h3>
+
+</body>
+</html>
